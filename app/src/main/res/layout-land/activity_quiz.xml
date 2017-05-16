@@ -1,0 +1,65 @@
+<FrameLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/question"
+        android:padding="24dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/true_button"
+            android:text="@string/true_button"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/false_button"
+            android:text="@string/false_button"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cheat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="@string/cheat_button" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prev_btn"
+        android:src="@drawable/arrow_left"
+        android:contentDescription="@string/previous"
+        android:layout_gravity="bottom|left"
+        />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/next_btn"
+        android:src="@drawable/arrow_right"
+        android:contentDescription="@string/next_button"
+        android:layout_gravity="bottom|right"
+        />
+
+
+</FrameLayout>
